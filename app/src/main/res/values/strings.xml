@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MexComApp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="start_fragment_label">Start Fragment</string>
+    <string name="shop_fragment_label">Shop Fragment</string>
+    <string name="cart_fragment_label">Cart Fragment</string>
+    <string name="calendar_fragment_label">Calendar Fragment</string>
+    <string name="confirm_fragment_label">Confirm Fragment</string>
+    <string name="clear_button_text">Borrar</string>
+    <string name="calendar_button_text">Ver Calendario</string>
+    <string name="shopback_button_text">Volver a la tienda</string>
+    <string name="confirm_button_text">Confirmar</string>
+    <string name="start_button_text">COMENZAR</string>
+    <string name="send_button_text">Enviar compra</string>
+    <string name="for_price"> MXN</string>
+    <!-- Strings used for text views and Toast -->
+    <string name="total_tag">TOTAL: </string>
+    <string name="welcome_first_fragment">Comercio mexicano en tu móvil</string>
+    <string name="shop_heading">Lista de productos</string>
+    <string name="cart_heading">Productos en carrito</string>
+    <string name="calendar_heading">Calendario de promociones</string>
+    <string name="confirm_heading">Escribe un nombre para mandar la solicitud de compra:</string>
+    <string name="confirm_hint">Nombre de usuario</string>
+    <string name="decor_promo">25% descuento en decorativos</string>
+    <string name="prenda_promo">25% descuento en prendas</string>
+    <string name="util_promo">25% descuento en utilidades</string>
+    <string name="total_promo">10% descuento en toda la tienda</string>
+    <string name="no_promo">No hay descuentos este día</string>
+    <string name="Firebase_toast">Solicitud de compra enviada</string>
+
+</resources>

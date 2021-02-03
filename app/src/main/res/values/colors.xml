@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#25FCE7</color>
+    <color name="colorSecondary">#050546</color>
+    <color name="colorThird">#F80080</color>
+    <color name="startBackground">#FFCC38</color>
+    <color name="buttonBackground">#BBDEFB</color>
+    <color name="startTextColor">#B43C01</color>
+    <color name="shopBackground">#33FB43</color>
+    <color name="colorFourth">#E83184</color>
+    <color name="calendarBackground">#26C6C6</color>
+    <color name="colorPromo">#004000</color>
+    <color name="cartBackground">#AB63AB</color>
+    <color name="colorFifth">#2196F3</color>
+    <color name="colorSixth">#11FB21</color>
+    <color name="colorSeventh">#E85444</color>
+    <color name="colorEighth">#894189</color>
+    <color name="colorNinth">#DDAA22</color>
+    <color name="colorTenth">#363636</color>
+    <color name="colorEleventh">#A8A8A8</color>
+    <color name="colorTwelfth">#800000</color>
+    <color name="colorTrans">#400000</color>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/StartFragment">
+
+    <fragment
+        android:id="@+id/StartFragment"
+        android:name="com.example.mexcomapp.presentation.StartFragment"
+        android:label="@string/start_fragment_label"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/actionStartToShop"
+            app:destination="@id/ShopFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ShopFragment"
+        android:name="com.example.mexcomapp.presentation.ShopFragment"
+        android:label="@string/shop_fragment_label"
+        tools:layout="@layout/fragment_shop">
+        <action
+            android:id="@+id/actionShopToCart"
+            app:destination="@id/CartFragment" />
+        <action
+            android:id="@+id/actionShopToCalendar"
+            app:destination="@id/CalendarFragment"/>
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/CartFragment"
+        android:name="com.example.mexcomapp.presentation.CartFragment"
+        android:label="@string/cart_fragment_label"
+        tools:layout="@layout/fragment_cart">
+        <action
+            android:id="@+id/actionCartToShop"
+            app:destination="@id/ShopFragment"/>
+        <action
+            android:id="@+id/actionCartToConfirm"
+            app:destination="@id/ConfirmFragment"/>
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/CalendarFragment"
+        android:name="com.example.mexcomapp.presentation.CalendarFragment"
+        android:label="@string/calendar_fragment_label"
+        tools:layout="@layout/fragment_calendar">
+        <action
+            android:id="@+id/actionCalendarToShop"
+            app:destination="@id/ShopFragment"/>
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/ConfirmFragment"
+        android:name="com.example.mexcomapp.presentation.ConfirmFragment"
+        android:label="@string/confirm_fragment_label"
+        tools:layout="@layout/fragment_confirm">
+        <action
+            android:id="@+id/actionConfirmToShop"
+            app:destination="@id/ShopFragment" />
+        <argument
+            android:name="myArgSec"
+            app:argType="float" />
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+</navigation>

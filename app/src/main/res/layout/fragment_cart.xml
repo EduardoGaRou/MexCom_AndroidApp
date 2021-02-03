@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cartBackground"
+    tools:context=".presentation.CartFragment">
+
+    <TextView
+        android:id="@+id/cart_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_heading"
+        android:textSize="30sp"
+        android:textColor="@color/colorSecondary"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cart_header"
+        app:layout_constraintBottom_toTopOf="@id/total_price"
+        tools:itemCount="10"
+        tools:listitem="@layout/item_cart"/>
+
+    <LinearLayout
+        android:id="@+id/total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/shopback_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:background="@color/colorEleventh"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_pricetag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/total_tag"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_pricenum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:text="234.00"
+            android:textStyle="italic"
+            android:textSize="30sp"
+            android:textColor="@color/colorTwelfth"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_pricecoin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/for_price"
+            android:textStyle="italic"
+            android:textSize="30sp"
+            android:textColor="@color/colorTwelfth"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/shopback_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorSixth"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/shopback_button_text"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:text="@string/clear_button_text"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_confirm"/>
+
+    <Button
+        android:id="@+id/button_confirm"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:text="@string/confirm_button_text"
+        android:textSize="30sp"
+        android:background="@color/colorNinth"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_clear"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

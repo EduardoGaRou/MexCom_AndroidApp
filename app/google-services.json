@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "721693302200",
+    "project_id": "mexcomapp",
+    "storage_bucket": "mexcomapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721693302200:android:33ce448d46793aefc4c34d",
+        "android_client_info": {
+          "package_name": "com.example.mexcomapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721693302200-105mgim6qr89rruk6eo1evmijjhepok2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mexcomapp",
+            "certificate_hash": "51c4ed13dce8e5a6754cdd11b8c34adc44a1cd04"
+          }
+        },
+        {
+          "client_id": "721693302200-1kr463bdh2tf8rsq08gv90k8dl94b9ge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvUSIyS3_sBTqC3wfjy3aWnE7UDW39ZdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721693302200-1kr463bdh2tf8rsq08gv90k8dl94b9ge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
